@@ -1,12 +1,13 @@
 # fileManage
 文件管理器的java实现
 
-## 简介
+## 1. 简介
 
-**项目需求：**
+### 1.1. 项目需求
+
 运用面向对象程序设计思想，基于Java文件管理和I/O框架，实现基于图形界面的GUI文件管理器。
 
-**项目内容：**
+### 1.2. 实现功能
 
 1. 实现文件夹创建、删除、进入。
 2. 实现当前文件夹下的内容罗列。
@@ -16,18 +17,19 @@
 6. 实现压缩文件的解压。
 7. 文件管理器具有图形界面。
 
+### 1.3. 开发平台
+
 **开发语言：**
 Java
-
 
 **开发平台：**
 Intellij IDEA 2021.2.2
 
 
 
-## 项目设计
+## 2. 项目设计
 
-### MVC设计流程：
+### 2.1. MVC设计流程：
 
 ![img](https://xc-figure.oss-cn-hangzhou.aliyuncs.com/img/202209021611627.gif)
 
@@ -37,9 +39,9 @@ Intellij IDEA 2021.2.2
 
 
 
-### 程序架构设计
+### 2.2. 程序架构设计
 
-**程序整体结构框架**
+#### 2.2.1. 整体结构框架
 
 ![img](https://xc-figure.oss-cn-hangzhou.aliyuncs.com/img/202209021612017.gif)
 
@@ -47,7 +49,7 @@ Intellij IDEA 2021.2.2
 
 
 
-**View结构**
+#### 2.2.2. View结构
 
 1. MyTable中包含了自己定义JTree中的部分构件；
 2. MyTree中包含了自己定义的JTable中的部分构件；
@@ -75,7 +77,7 @@ Intellij IDEA 2021.2.2
 
 
 
-**FileOperation结构**
+#### 2.2.3. FileOperation结构
 
 这个包中的的程序主要负责对文件的操作，其中FileController中保存了文件管理器的当前节点信息以及各种设置信息，以提供MainFrame进行界面的更新；
 
@@ -88,21 +90,21 @@ Intellij IDEA 2021.2.2
 
 
 
-### UML类图
+### 2.3. UML类图
 
 ![img](https://xc-figure.oss-cn-hangzhou.aliyuncs.com/img/202209021615668.jpg)
 
  
 
-## 项目展示
+## 3. 项目展示
 
-**主界面展示**
+### 3.1. 主界面展示
 
 ![img](https://xc-figure.oss-cn-hangzhou.aliyuncs.com/img/202209021624967.gif)
 
 
 
-**文件夹创建、删除、进入**
+### 3.2. 创建、删除、进入
 
 ![img](https://xc-figure.oss-cn-hangzhou.aliyuncs.com/img/202209021624582.gif)
 
@@ -112,13 +114,13 @@ Intellij IDEA 2021.2.2
 
 
 
-**隐藏文件**
+### 3.3. 隐藏文件
 
 ![img](https://xc-figure.oss-cn-hangzhou.aliyuncs.com/img/202209021625083.gif)
 
 
 
-**文件压缩**
+### 3.4. 文件压缩
 
 ![img](https://xc-figure.oss-cn-hangzhou.aliyuncs.com/img/202209021626015.gif)
 
